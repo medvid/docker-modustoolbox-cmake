@@ -44,4 +44,4 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          build-args: MTB_TAG=${MTB_TAG}
+          build-args: MTB_TAG=${{ env.MTB_TAG }}
