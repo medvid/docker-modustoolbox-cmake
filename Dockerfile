@@ -1,5 +1,6 @@
 # Use https://github.com/medvid/docker-modustoolbox as a base image
-FROM vmmedvid/modustoolbox:latest
+ARG MTB_TAG=latest
+FROM vmmedvid/modustoolbox:${MTB_TAG}
 
 # Install CMake, Ninja and LLVM/Clang
 RUN apt update -y \
