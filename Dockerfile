@@ -18,4 +18,4 @@ RUN apt update -y \
 RUN curl -fsSL https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07-x86_64-linux.tar.bz2 -o /tmp/gcc-arm-none-eabi-10.3-2021.07-x86_64-linux.tar.bz2 \
  && tar -C /opt -xjf /tmp/gcc-arm-none-eabi-10.3-2021.07-x86_64-linux.tar.bz2 \
  && rm /tmp/gcc-arm-none-eabi-10.3-2021.07-x86_64-linux.tar.bz2
-ENV GCC_TOOLCHAIN_PATH=/opt/gcc-arm-none-eabi-10.3-2021.07"
+ENV GCC_TOOLCHAIN_PATH="/opt/gcc-arm-none-eabi-10.3-2021.07"
